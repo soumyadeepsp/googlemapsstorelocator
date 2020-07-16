@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; height: 100vh;
+    margin: 0; padding: 0;
+}
+
+#map{
+    height: 100vh; width: 100vw;
+}
+
+#store_locator{
+    position: absolute; z-index: 1; font-size: 2.5vw; font-weight: bolder; color: #333;
+    top: 10vh; left: 7vw;
+}
+
+#zipcode{
+    position: absolute; z-index: 1; top: 16vh; left: 7vw; height: 4vh; width: 20vw;
+    min-width: 200px; min-height: 40px; background-color: #454545; border-radius: 30px;
+    color: white; font-size: 22px; padding-left: 1vw; border: none;
+}
+
+#zipcode:focus{
+    outline: none;
+}
+
+#search_icon{
+    position: absolute; z-index: 1; top: 17.5vh; left: 25.5vw; font-size: 18px; color: white;
+    cursor: pointer;
+}
+
+.stores_list_container{
+    width: 20vw; position: absolute; z-index: 1;
+    background-color: white; left: 7vw; top: 24vh; border-radius: 30px; bottom: 15vh;
+    display: flex; flex-direction: column; overflow-y: hidden; padding-bottom: 30px;
+}
+
+.store_address{
+    font-size: 16px; color: #514c4c; margin-top: 30px;
+}
+
+.store_phone_number{
+    color: #b5adad; margin-top: 15px; margin-bottom: 15px;
+}
+
+.store_container{
+    border-bottom: 1px solid #979797; display: flex; cursor: pointer;
+}
+
+.store_address span{
+    display: block;
+}
+
+.store_number_container{
+    display: flex; justify-content: center; align-items: center;
+}
+
+.store_number{
+    width: 30px; height: 30px; background-color:#454e53; color: white; border-radius: 50%;
+    font-size: 14px; display: flex; justify-content: center; align-items: center;
+}
+
+.store_info_container{
+    display: flex; flex-direction: column; flex-grow: 1;
+}
+
+.stores_list{
+    flex-grow: 1; overflow-y: scroll; padding-left: 20px; padding-right: 20px;
+}
+
+.store_info_window{
+    min-width: 300px; font-size: 18px; padding: 8px;
+}
+
+.store_info_name{
+    font-size: 24px; font-weight: bold; color: rgba(0, 0, 0, 0.87);
+}
+
+.store_info_status{
+    margin-top: 6px; border-bottom: 1px solid #00000029; padding-bottom: 6px;
+}
+
+.store_info_address, .store_info_phone{
+    margin-top: 8px; display: flex; flex-direction: row; align-items: center;
+}
+
+.circle{
+    width: 30px; height: 30px; background-color: #198581;border-radius: 50%;
+    color: white; display: flex; justify-content: center; align-items: center;
+    margin-right: 8px;
+}
+
+.store_container_background{
+    display: flex; flex-grow: 1; margin-top: 12px; border-radius: 18px;
+    padding-left: 8px; padding-right: 8px; margin-bottom: 12px; transition: all 0.2s ease-in-out;
+}
+
+.store_container_background:hover{
+    margin-top: 12px; background-color: #ccc; border-radius: 18px;
+    padding-left: 8px; padding-right: 8px; margin-bottom: 12px;
+}
